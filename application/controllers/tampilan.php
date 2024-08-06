@@ -202,7 +202,7 @@ class tampilan extends CI_Controller
             $perk = $ket['nama_pekerjaan'];
             $data[$perk] = $this->m_dashboard->pekerjaan($perk);
         }
-
+        
         $data['cowok'] = $this->m_dashboard->penduduk_getWhereCowok();
         $data['cewek'] = $this->m_dashboard->penduduk_getWhereCewek();
         $data['islam'] = $this->m_dashboard->penduduk_getWhereAgamaIslam();
@@ -219,6 +219,9 @@ class tampilan extends CI_Controller
         $data['StrataII'] = $this->m_dashboard->penduduk_getWherePendidikanSII();
         $data['StrataIII'] = $this->m_dashboard->penduduk_getWherePendidikanSIII();
         $data['StrataIII'] = $this->m_dashboard->penduduk_getWherePendidikanSIII();
+        $data['IRT'] = $this->m_dashboard->penduduk_getWherePekerjaanIRT();
+        $data['BelumBekerja'] = $this->m_dashboard->pekerjaan_getWhereBelumBekerja();
+        $data['Pelajar'] = $this->m_dashboard->pekerjaan_getWherePelajar();
         $this->load->view('tampilan/template/header', $data);
         $this->load->view('tampilan/template/navbar', $data);
         $this->load->view('tampilan/template/topbar', $data);

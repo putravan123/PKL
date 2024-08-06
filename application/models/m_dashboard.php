@@ -131,6 +131,14 @@ class M_dashboard extends CI_Model
     {
         return $this->db->get_where('penduduk', ['status_pendidikan' => 'StrataIII'])->num_rows();
     }
+    function pekerjaan_getWhereBelumBekerja()
+    {
+        return $this->db->get_where('pekerjaan', ['nama_pekerjaan' => 'Belum/Tidak Bekerja'])->num_rows();
+    }
+    function pekerjaan_getWherePelajar()
+    {
+        return $this->db->get_where('pekerjaan', ['nama_pekerjaan' => 'Pelajar/Mahasiswa'])->num_rows();
+    }
     function pendidikan($kat)
     {
         $this->db->select('*');
