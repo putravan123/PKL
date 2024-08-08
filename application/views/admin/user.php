@@ -167,8 +167,8 @@
                                 ?>
                                 <label>Typeuser</label>
                                 <select class=" custom-select" name="typeuser">
-                                    <option value="2" <?= $selU ?>>user</option>
-                                    <option value="1" <?= $selA ?>>admin</option>
+                                    <option value="2" <?= $selU ?>>User</option>
+                                    <option value="1" <?= $selA ?>>Admin</option>
                                 </select>
                                 <div class="form-group">
                                     <div class="mt-3 form-check">
@@ -187,8 +187,8 @@
                                             <div class="col-sm-9">
                                                 <div class="custom-file">
                                                     <input type="file" class="custom-file-input" id="file" name="image">
-                                                    <label class="custom-file-label" for="image" id="pilih">Choose
-                                                        file</label>
+                                                    <label class="custom-file-label" for="image" id="pilih">Choose file
+                                                    </label>
                                                 </div>
                                             </div>
                                             <div class="col-sm-3">
@@ -199,8 +199,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+                                <button type="submit" class="btn btn-primary">Simpan perubahan</button>
                             </div><?= form_close() ?>
                         </div>
                     </div>
@@ -237,8 +237,8 @@
                             <label>Typeuser</label>
                             <select class="custom-select" name="typeuser">
                                 <option>pilih</option>
-                                <option value="2">user</option>
-                                <option value="1">admin</option>
+                                <option value="2">User</option>
+                                <option value="1">Admin</option>
                             </select>
                             <div class="form-group">
                                 <div class="mt-3 form-check">
@@ -248,8 +248,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kembali</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                         <?= form_close() ?>
                     </div>
