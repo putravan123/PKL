@@ -292,7 +292,7 @@ class info extends CI_Controller
         // $data['sarana'] = $this->M_info->sarana_get();
         $data['kategori'] = $this->db->get('kategori_sarana')->result_array();
 
-        $this->form_validation->set_rules('nama', 'nama', 'required|trim|is_unique[sarana.nama_spesifik]');
+        $this->form_validation->set_rules('nama', 'nama', 'required|trim');
         $this->form_validation->set_rules('detail', 'detail', 'required|trim');
 
         if ($this->form_validation->run() == false) {
@@ -314,7 +314,7 @@ class info extends CI_Controller
         $this->session->userdata('username')])->row_array();
         $data['sarana'] = $this->db->get_where('sarana', ['id' => $id])->result_array();
 
-        $this->form_validation->set_rules('nama', 'nama', 'required|trim|is_unique[sarana.nama_spesifik]');
+        $this->form_validation->set_rules('nama', 'nama', 'required|trim');
         $this->form_validation->set_rules('detail', 'detail', 'required|trim');
 
         if ($this->form_validation->run() == false) {
@@ -345,9 +345,9 @@ class info extends CI_Controller
 
         $data['kategori'] = $this->db->get('kategori_sarana')->result_array();
 
-        $this->form_validation->set_rules('nama', 'nama', 'required|trim|is_unique[kategori_sarana.nama_kategori]');
+        $this->form_validation->set_rules('nama', 'nama', 'required|trim');
         $this->form_validation->set_rules('kategori', 'Kategori', 'required|trim');
-        $this->form_validation->set_rules('inisial', 'Inisial', 'required|trim|is_unique[kategori_sarana.inisial]');
+        $this->form_validation->set_rules('inisial', 'Inisial', 'required|trim');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('template/header', $data);

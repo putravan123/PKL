@@ -222,6 +222,7 @@ class tampilan extends CI_Controller
         $data['IRT'] = $this->m_dashboard->penduduk_getWherePekerjaanIRT();
         $data['BelumBekerja'] = $this->m_dashboard->pekerjaan_getWhereBelumBekerja();
         $data['Pelajar'] = $this->m_dashboard->pekerjaan_getWherePelajar();
+        $data['BK'] = $this->m_dashboard->pekerjaan_getWhereBK();
         $this->load->view('tampilan/template/header', $data);
         $this->load->view('tampilan/template/navbar', $data);
         $this->load->view('tampilan/template/topbar', $data);

@@ -185,7 +185,7 @@ INSERT INTO `kategori_sarana` (`id`, `nama_kategori`, `kategori`, `inisial`) VAL
 (8, 'Doktor Swasta', 'Kesehatan', 'DS'),
 (9, 'Bidan Swasta', 'Kesehatan', 'BS'),
 (10, 'Kader Posyandu', 'Kesehatan', 'KP'),
-(11, 'Bidang Kelurahan', 'Kesehatan', 'BK'),
+(11, 'Bidang Kelurahan', 'Pemerintahan', 'BK'),
 (17, 'Klinik', 'Kesehatan', 'klinik');
 
 -- --------------------------------------------------------
