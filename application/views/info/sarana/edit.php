@@ -26,7 +26,10 @@
                                 </div>
                                 <div class="form-group">
                                     <label>inisial</label>
-                                    <input type="text" name="inisisal" class="form-control" value="<?= isset($b['nama_kategori']) ? $b['nama_kategori'] : '' ?>">
+
+                                    <input type="text" name="inisial" class="form-control" value="<?= isset($b['nama_kategori']) ? $b['nama_kategori'] : '' ?>">
+
+     
                                     <?= form_error('inisial', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
                                 <div class="form-group">
