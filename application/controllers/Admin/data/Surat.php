@@ -115,14 +115,14 @@ class Surat extends CI_Controller
         $pdf->Cell(10, 0, $penduduk['nama_pekerjaan'], 0, 1);
         $pdf->Ln(7);
         $pdf->Cell(20);
-        $pdf->MultiCell(10, 0, 'Alamat', 0, 1);
+        $pdf->MultiCell(100, 0, 'Alamat', 0, 1);
         $pdf->Cell(100);
         $pdf->Cell(10, 0, ':', 0, 1);
         $pdf->Cell(102);
-        $pdf->Cell(10, 0, $penduduk['alamat_spesifik'], 0, 1);
+        $pdf->Cell(100, 0, $penduduk['alamat_spesifik'], 0, 10);
         $pdf->Ln(7);
         $pdf->Cell(12);
-        $pdf->MultiCell(170, 7, '       Berdasarkan surat pengantar dari Rt/Rw setempat bahwa benar orang tersebut di atas penduduk Kelurahan Jayawaras Kecamatan Tarogong Kidul Kabupaten Garut dan yang bersangkutan di atas saat ini berdomisili di alamat tersebut.', 0, 'J', FALSE);
+        $pdf->MultiCell(170, 7, ' Berdasarkan surat pengantar dari Rt/Rw setempat bahwa benar orang tersebut di atas penduduk Kelurahan Jayawaras Kecamatan Tarogong Kidul Kabupaten Garut dan yang bersangkutan di atas saat ini berdomisili di alamat tersebut.', 0, 'J', FALSE);
         $pdf->SetFont('Arial', 'B', '12');
         $pdf->SetFont('');
         $pdf->Ln(2);
