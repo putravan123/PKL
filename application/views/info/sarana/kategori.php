@@ -87,6 +87,7 @@
                                         <option value="Kesehatan">Kesehatan</option>
                                         <option value="Hiburan">Hiburan</option>
                                         <option value="Umum">Umum</option>
+                                        <option value="Keamanan">Keamanan</option>
                                     </select>
                                     <?= form_error('kategori', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>

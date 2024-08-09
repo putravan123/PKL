@@ -69,7 +69,7 @@ class admin extends CI_Controller
             $upload_image = $_FILES['image']['name'];
 
             if ($upload_image) {
-                $config['allowed_types'] = 'gif|jpg|png';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
                 $config['max_size']      = '10240';
                 $config['upload_path']   = './assets/img/profile';
 
@@ -83,7 +83,7 @@ class admin extends CI_Controller
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('image', $new_image);
                 } else {
-                    echo $this->upload->dispay_errors();
+                    echo $this->upload->display_errors();
                 }
             }
             if ($password == '') {
