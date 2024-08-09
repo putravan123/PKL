@@ -25,7 +25,7 @@ class M_data extends CI_Model
 
                 $this->db->set('gambar', $new_image);
             } else {
-                echo $this->upload->dispay_errors();
+                echo $this->upload->display_errors();
             }
         }
         // var_dump($new_image);

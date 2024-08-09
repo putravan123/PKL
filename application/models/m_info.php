@@ -345,7 +345,6 @@ class M_info extends CI_Model
     function sarana_delete($id)
     {
         
-
         $this->db->where('id', $id);
         $this->db->delete('sarana');
     }
