@@ -55,7 +55,7 @@ class M_data extends CI_Model
             if ($this->upload->do_upload('photo')) {
                 $new_image = $this->upload->data('file_name');
             } else {
-                echo $this->upload->dispay_errors();
+                echo $this->upload->display_errors();
             }
         }
 
@@ -107,7 +107,7 @@ class M_data extends CI_Model
                 $new_image = $this->upload->data('file_name');
                 $this->db->set('photo', $new_image);
             } else {
-                echo $this->upload->dispay_errors();
+                echo $this->upload->display_errors();
             }
         }
         if ($jabatan_cek == 'Perangkat Desa') {
@@ -166,7 +166,7 @@ class M_data extends CI_Model
             if ($this->upload->do_upload('dokumen')) {
                 $new_dokumen = $this->upload->data('file_name');
             } else {
-                echo $this->upload->dispay_errors();
+                echo $this->upload->display_errors();
             }
         }
         $data = [

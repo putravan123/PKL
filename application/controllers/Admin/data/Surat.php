@@ -832,4 +832,123 @@ class Surat extends CI_Controller
 
         $pdf->Output();
     }
+    public function menikah()
+    {
+        $pdf = new FPDF('P', 'mm', array(210, 330));
+
+        $pdf->SetTitle('SURAT MENIKAH ');
+        $pdf->AddPage();
+        $pdf->Image(base_url() . 'assets/img/kop.png', 12, 10, 185);
+        $pdf->SetFont('Arial', 'B', 14);
+        $pdf->SetFont('');
+        $pdf->Ln(3);
+        $pdf->Cell(19);
+        $pdf->Cell(185, 2, 'PEMERINTAH KABUPATEN GARUT', 0, 2, 'C');
+        $pdf->Ln(4);
+        $pdf->Cell(19);
+        $pdf->SetFont('Arial', '', 16);
+        $pdf->Cell(185, 2, 'KECAMATAN TAROGONG KIDUL', 0, 1, 'C');
+        $pdf->Ln(5);
+        $pdf->Cell(19);
+        $pdf->SetFont('Arial', 'B', 18);
+        $pdf->Cell(185, 2, 'KELURAHAN JAYAWARAS', 0, 1, 'C');
+        $pdf->Ln(6);
+        $pdf->Cell(19);
+        $pdf->SetFont('Arial', '', 10);
+        $pdf->SetFont('');
+        $pdf->Cell(185, 2, 'Jalan Gordah No.40 Kode Pos 44151', 0, 1, 'C');
+        $pdf->Ln(2);
+        $pdf->Cell(19);
+        $pdf->Cell(180, 2, '', 0, 1, 'C');
+        $pdf->Ln(2);
+        $pdf->Cell(19);
+        $pdf->Cell(185, 2, '', 0, 1, 'C');
+        $pdf->Ln();
+        $pdf->SetFont('Arial', 'BU', 12);
+        $pdf->Ln(8);
+        $pdf->Cell(185, 2, 'SURAT KETERANGAN MENIKAH', 0, 1, 'C');
+        $pdf->SetFont('Arial', '', 12);
+        $pdf->Ln(3);
+        $pdf->Cell(185, 2, 'Nomor:474.3 /         -KEL/X/2022', 0, 1, 'C');
+        $pdf->Ln(15);
+        $pdf->Cell(12);
+        $pdf->SetFont('Arial', '', 12);
+        $pdf->MultiCell(170, 7, '        Yang bertanda tangan di bawah ini Kepala Kelurahan Jayawaras Kecamatan Tarogong Kidul Kabupaten Garut, dengan ini menerangkan bahwa :', 0, 'J', FALSE);
+        $pdf->Ln(7);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0, 'Tempat Tanggal lahir', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, '', 0, 1);
+        $pdf->Ln(7);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0, 'Pekerjaan', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, '', 0, 1);
+        $pdf->Ln(7);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0, 'Alamat', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, ' ', 0, 1);
+        $pdf->Ln(7);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0,  '', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, ' ', 0, 1);
+        $pdf->Ln(7);
+        $pdf->Cell(15);
+        $pdf->Cell(10, 0, '    Hari', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, ' ', 0, 1);
+        $pdf->Ln(7);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0, 'Tanggal ', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Cell(10, 0, ' ', 0, 1);
+        $pdf->Ln(15);
+        $pdf->Cell(20);
+        $pdf->Cell(10, 0, 'Di', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, ':', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Ln(7);
+        $pdf->Cell(15);
+        $pdf->Cell(10, 0, '    Di Sebabkan                                                :', 0, 1);
+        $pdf->Cell(100);
+        $pdf->Cell(10, 0, '', 0, 1);
+        $pdf->Cell(102);
+        $pdf->Ln(15);
+        $pdf->Cell(15);
+        $pdf->Cell(10, 0, '         Demikian Surat keterangan ini dibuat dan dapat dipergunakan sebagai mana mestinya', 0, 1);
+        $pdf->Ln(12);
+        $pdf->Cell(115);
+
+        $pdf->Cell(10, 6, 'Garut, ', 0, 0, 'L');
+        $pdf->Ln(10);
+        $pdf->Cell(115, 6, '', 0, 0, 'C');
+        $pdf->Cell(10, 6, 'Kepala Kelurahan Jayawaras,', 0, 0, 'L');
+        $pdf->Ln();
+        $pdf->Ln(7);
+        $pdf->SetFont('Arial', 'BU', '12');
+        $pdf->Cell(115, 5, '', 0, 0, 'C');
+        $pdf->Cell(10, 5, '', 0, 0, 'L');
+        $pdf->Ln();
+        $pdf->Cell(115, 5, '', 0, 0, 'C');
+
+
+        $pdf->SetMargins(3, 3, 3);
+
+        $pdf->Output();
+    }
 }
