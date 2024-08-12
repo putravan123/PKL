@@ -324,6 +324,9 @@ class info extends CI_Controller
             $this->load->view('info/sarana/edit', $data);
             $this->load->view('template/footer');
         } else {
+            $this->db->set($data);
+            $this->db->where('id', $id);
+            $this->db->update('sarana');
             $this->M_info->sarana_edit($id);
             $this->session->set_flashdata('sarana', '<div class="alert alert-success" role="alert"> sarana Berhasil di Tambahkan!</div>');
             redirect('Admin/tampilan/info/sarana');

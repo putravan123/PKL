@@ -62,7 +62,7 @@ class user extends CI_Controller
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('image', $new_image);
                 } else {
-                    echo $this->upload->dispay_errors();
+                    echo $this->upload->display_errors();
                 }
             }
 
