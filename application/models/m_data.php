@@ -44,7 +44,7 @@ class M_data extends CI_Model
         $upload_image = $_FILES['photo']['name'];
 
         if ($upload_image) {
-            $config['allowed_types'] = 'gif|jpg|png';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $config['max_size']      = '10240';
             $config['upload_path']   = './assets/img/karyawan';
             $config['remove_spaces'] = true;
@@ -91,7 +91,7 @@ class M_data extends CI_Model
         // cek jika ada gambar yang di upload
         $upload_image = $_FILES['photo']['name'];
         if ($upload_image) {
-            $config['allowed_types'] = 'gif|jpg|png';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
             $config['max_size']      = '10240';
             $config['upload_path']   = './assets/img/karyawan';
             $config['remove_spaces'] = true;
