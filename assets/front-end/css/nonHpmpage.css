@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&amp;display=swap');
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-light {
+  background-color: #223138 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+  margin-left: 24px !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #42CD47;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(249, 247, 117);
+}
+
+.namaDesa {
+  line-height: 1.25;
+  margin-bottom: 0rem;
+  font-weight: 700;
+  color: #E8EF4D;
+  font-size: 1.25rem;
+}
+
+.kabDesa {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+
+.btn-layanan {
+  background-color: #42CD47;
+  border: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 25px;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.tgl-berita {
+  font-size: .8rem;
+}
+
+.link-berita-selanjutnya {
+  color: #099B32;
+}
+
+#kabarDesa .col-md-4 {
+  margin-bottom: 3rem;
+}
+
+.img-berita {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.above-footer {
+  background-color: #223138;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: 3rem;
+}
+
+.below-footer {
+  background-color: #83CC98;
+  padding: 7px 0px;
+}
+
+.footer-text {
+  color: white;
+  margin-top: 1rem;
+  text-align: ;
+}
+
+.no-tlp-penting {
+  color: white;
+  overflow-y: scroll;
+  height: 150px;
+  margin-top: 1rem;
+}
+
+.link-wisata-desa {
+  text-decoration: none !important;
+}
+
+.link-wisata-desa p {
+  color: #212121 !important;
+
+}
+
+.iconx {
+  margin-right: 5px
+}
+
+.page-link {
+  border: none !important;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.link-nextpre {
+  background-color: #163F5B !important;
+  width: 90px !important;
+  color: white !important;
+  border-radius: 30px !important;
+}
+
+.number-link {
+  background-color: #163F5B !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.page-item.disabled .link-nextpre {
+  background-color: gray !important;
+  color: white !important;
+}
+
+.page-item.active .number-link {
+  background-color: #89D32A !important;
+  color: white !important;
+}
+
+.img-jualan {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.harga {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #018A7A;
+}
+
+.harga-mobile {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #018A7A;
+}
+
+.btn-hubungi-penjual {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#beliDariDesa .col-xl-3 {
+  margin-bottom: 3rem;
+}
+
+
+
+
+.search-belanja {
+  border-radius: 30px;
+  border-color: #FF884E;
+}
+
+.search-belanja:focus {
+  border-color: #FF884E;
+  box-shadow: 0 0 0 .2rem rgba(255, 136, 78, 0.27);
+}
+
+.img-content {
+  width: 72.5%;
+  /*height: 400px;*/
+  /*object-fit: cover;*/
+}
+
+.isi-konten {
+  margin-top: 3rem;
+}
+
+.img-wisata {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.judul-wisata {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#wisataDesaKami {
+  margin-top: 5rem;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: #018A7A !important;
+  font-size: 24px !important;
+}
+
+.judulInfog {
+  font-weight: 700;
+  color: #212121
+}
+
+.infografis-card-wrapper {
+  background-color: #F2F5F8;
+  min-width: 100px;
+  padding: 15px;
+  border-radius: 11px;
+}
+
+.card-inf {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 7px 10px 5px -7px rgba(0, 0, 0, 0.1);
+  border-radius: 7px
+}
+
+.jum-penduduk {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.ket-inf {
+  font-weight: 500;
+  margin-top: .5rem;
+}
+
+.img-inf {
+  width: 40%;
+  margin-top: .7rem;
+}
+
+.table .thead-dark th {
+  background-color: #016A65 !important;
+  border: none;
+}
+
+#pengelolaanPage .table .thead-dark th {
+  background-color: #016A65 !important;
+  border: none;
+}
+
+.table .thead-dark th:first-child {
+  border-radius: 7px 0px 0px 0px;
+}
+
+.table .thead-dark th:last-child {
+  border-radius: 0px 7px 0px 0px;
+}
+
+.table-infografis {
+  box-shadow: 7px 10px 5px -7px rgba(0, 0, 0, 0.1);
+}
+
+.table-infografis tbody {
+  background-color: white;
+}
+
+
+.pie-title-center {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.pie-value {
+  display: block;
+  position: absolute;
+  font-size: 24px;
+  height: 40px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  line-height: 40px;
+  color: #212121
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(249, 247, 117);
+}
+
+.show-read-more .more-text {
+  display: none;
+}
+
+.tampilan-mobile {
+  display: none;
+}
+
+
+
+
+.error-img {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.wrap-nama-desa-footer {
+  margin-left: -20px;
+}
+
+.full-width {
+  width: 85%;
+  height: auto
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foto-perangkat {
+  width: 175px;
+}
+
+.jabatan-perangkat {
+  margin-bottom: 0.2rem;
+}
+
+#isiVisi {
+  font-size: 1.2rem;
+}
+
+#isiMisi {
+  padding-left: 15px;
+}
+
+#isiMisi h5 {
+  font-size: 1rem;
+}
+
+#imgAlurPelayanan {
+  width: 50vw;
+}
+
+.header-faq {
+  /*background-color: #018A7A;*/
+  /*color: white;*/
+  /*border-bottom: 0px;*/
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cta-button {
+  width: 50%
+}
+
+.img-layanan {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap-download-layanan {
+  margin-top: 8.5rem;
+}
+
+.img-alur {
+  width: 90%;
+}
+
+.logo-digides {
+  width: 300px;
+  margin-bottom: 2.5rem;
+}
+
+.center-v {
+  margin: auto;
+}
+
+.center-v p {
+  margin-bottom: 0px;
+}
+
+.bg-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.bg-right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.bg-landing {
+  width: 380px;
+}
+
+.select2-container {
+  width: 100% !important;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 10px;
+  border: 2px solid #F8A23D;
+}
+
+.select2-container .select2-selection--single {
+  height: 45px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+  right: 7px;
+}
+
+.faq-text{
+  font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
+  .bg-landing {
+    width: 250px;
+  }
+}
+
+
+@media (max-width: 579px) {
+  .img-content {
+    height: 200px
+  }
+
+  .full-width {
+    width: 75vw;
+    height: auto
+  }
+
+  .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  .tampilan-desktop {
+    display: none;
+  }
+
+  .tampilan-mobile {
+    display: block !important;
+  }
+
+  .img-logo {
+    height: 40px !important
+  }
+
+  .center-mobile {
+    text-align: center;
+  }
+
+  .footer-kontak {
+    margin-bottom: .6rem;
+  }
+
+  .mobile-margin {
+    margin-bottom: .7rem;
+  }
+
+  #beliDariDesa .col-xl-3 {
+    margin-bottom: 1rem;
+  }
+
+  #beliDariDesa .col-xl-3:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: calc(.25rem - 1px);
+    ;
+  }
+
+  .btn-beli-mobile {
+    width: 80%;
+    border-radius: 35px;
+  }
+
+  .error-img {
+    width: 70%
+  }
+
+  .wrap-nama-desa {
+    margin-left: -17.5px
+  }
+
+  .wrap-nama-desa-footer {
+    margin-left: -10px;
+  }
+
+  .namaDesa {
+    font-size: 1rem;
+  }
+
+  .kabDesa {
+    font-size: .8rem;
+  }
+
+  .img-alur {
+    width: 100%;
+  }
+
+  #faq h5 {
+    font-size: 1rem;
+  }
+
+  #faq .card-body {
+    font-size: .85rem;
+  }
+
+  .logo-digides {
+    width: 200px;
+  }
+
+  .bg-left {
+    display: none;
+  }
+
+  .bg-landing {
+    width: 200px;
+  }
+
+}

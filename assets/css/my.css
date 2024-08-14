@@ -1,0 +1,213 @@
+.struktur{
+  align-items: center;
+}
+/* Sambutan */
+.Sambutan{
+  padding-bottom: 100px;
+}
+.judul-sambutan {
+  text-align: center;
+  margin-top: 80px;
+}
+.judul-sambutan h1 {
+  font-weight: 800;
+}
+.sambutan .image{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sambutan .image img{
+  width: 250px;
+}
+.sambutan{
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 60px;
+
+}
+.kata{
+  text-align: center;
+}
+.kata h2{
+  font-weight: 800;
+}
+
+@media (min-width: 576px) {
+  .sambutan{
+    display: flex;
+  }
+  .sambutan .image{
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-right: 50px;
+  }
+  .kata{
+    text-align: left;
+  }
+}
+
+/* profile admin */
+  .resume-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .resume-box li {
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+  }
+  
+  .resume-box li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border-left: 1px solid #333;
+  }
+  
+  .resume-box .icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #252525;
+  }
+  
+  .resume-box .time {
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+    opacity: .8;
+  }
+  
+  .resume-box h5 {
+    font-size: 18px;
+    margin: 7px 0 10px;
+    font-weight: 700;
+  }
+  .resume-box p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+  
+  .resume-box .place {
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 26px;
+  }
+  
+  .resume-box .place:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 9px;
+    opacity: .8;
+  }
+  .card-profile {
+    background: #ffffff !important;
+    color: #575962; }
+    .card-profile .profile-picture {
+      text-align: center;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: -41px;
+      width: 100%;
+      box-sizing: border-box; }
+    .card-profile .user-profile .name {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 5px; }
+    .card-profile .user-profile .job {
+      color: #83848a;
+      margin-bottom: 5px; }
+    .card-profile .user-profile .desc {
+      color: #bbb;
+      margin-bottom: 15px; }
+    .card-profile .user-profile .social-media {
+      margin-bottom: 20px; }
+      .card-profile .user-profile .social-media .btn {
+        padding: 5px !important; }
+        .card-profile .user-profile .social-media .btn i {
+          font-size: 22px !important; }
+.card-profile .user-stats {
+  margin-bottom: 10px; }
+.card-profile .user-stats [class^="col"] {
+  border-right: 1px solid #ebebeb; }
+.card-profile .user-stats [class^="col"]:last-child {
+  border-right: 0px; }
+.card-profile .user-stats .number {
+  font-weight: 400;
+  font-size: 15px; }
+.card-profile .user-stats .title {
+  color: #7d7b7b; }
+.card-profile .card-header {
+border-bottom: 0px;
+height: 100px;
+position: relative; }
+.card-profile .card-body {
+padding-top: 60px; }
+.card-profile .card-footer {
+border-top: 0px; }
+.card-profile.card-secondary .card-header {
+background: #716aca; }
+.row-nav-line {
+  margin-left: -20px;
+  margin-right: -20px; 
+}
+.nav.nav-line.nav-color-secondary .nav-link:hover, .nav.nav-line.nav-color-secondary .nav-link:focus {
+  color: #716aca; 
+}
+
+.nav.nav-line {
+width: 100%;
+border-bottom: 1px solid #f1f1f1; 
+}
+.nav.nav-line .nav-link {
+  padding: 15px 20px;
+  color: #575962;
+  border-width: 0px;
+  font-size: 13px;
+  font-weight: 600; 
+}
+.nav.nav-line .nav-link:hover, .nav.nav-line .nav-link:focus {
+  color: #177dff;
+  border-width: 0px; 
+}
+.nav.nav-line .nav-link.active {
+  border-width: 0;
+  background-color: transparent;
+  color: #177dff;
+  border-bottom: 2px solid #177dff;
+  border-radius: 0px; 
+}
+.card-with-nav .card-header {
+  border-bottom: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; 
+}
+.card-with-nav .card-body {
+  padding: 15px 25px !important;
+}
